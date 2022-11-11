@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.6.13</version>
+		<relativePath/> <!-- lookup parent from repository -->
+	</parent>
+	<groupId>com.LuisEduardoRuizIgnacio</groupId>
+	<artifactId>PruebaTecnicaProgramadorJR</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>PruebaTecnicaProgramadorJR</name>
+	<description>Realiza las siguientes acciones usando PostgreSQL 1. Crea una base de datos con el nombre “BD_TESTVP” 2. Crea la o las tablas necesarias para poder hacer un login de autentificación para la Parte 2 3. Crea una tabla con nombre “tbl_productos” son los siguientes campos: a. Id_producto b. Nombre_producto c. Fecha_vigencia d. Cantidad  Parte 2 Realiza una API usando Spring Boot que contenga los siguientes endpoints: 1. Autentificacion 2. Lista_productos 3. Elimina_registro 4. Actualiza_registro Se detalla cada uno de los endpoints mencionados anteriormente: 1.-Método de autentificación de credenciales que genera un token de sesión para poder hacer uso de los endpoints 2,3 y 4  Datos de entrada Datos de salida  Usuario y password Token de sesión  Datos de entrada Datos de salida  No necesario Datos de tabla productos  Datos de entrada Datos de salida  Id del registro Respuesta de acción  Datos de entrada Datos de salida  Nombre_producto,fecha_vigencia,cantidad Registro actualizado</description>
+	<properties>
+		<java.version>1.8</java.version>
+	</properties>
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
+		</dependency>
+                
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-devtools</artifactId>
+			<scope>runtime</scope>
+			<optional>true</optional>
+		</dependency>
+		<dependency>
+			<groupId>org.postgresql</groupId>
+			<artifactId>postgresql</artifactId>
+			<scope>runtime</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+	 <dependency>
+	  <groupId>org.eclipse.persistence</groupId>
+	  <artifactId>javax.persistence</artifactId>
+	  <version>2.2.1</version>
+	  <type>jar</type>
+	 </dependency>
+	 <dependency>
+	  <groupId>jakarta.validation</groupId>
+	  <artifactId>jakarta.validation-api</artifactId>
+	  <version>2.0.2</version>
+	  <type>jar</type>
+	 </dependency>
+	 
+	
+	
+         
+	
+	
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>
